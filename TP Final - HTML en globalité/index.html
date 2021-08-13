@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="TP Final - Chouan Scotty">
+    <title>TP Final - HTML en globalité</title>
+</head>
+
+<body>
+    <header>
+        <h1>HTML dans sa globalité</h1>
+    </header>
+
+    <main>
+        <article>
+            <h2>Bonjour!</h2>
+            <p>Je m'appelle <strong>Scotty Chouan</strong>, j'ai <strong>23 ans</strong> et je suis amateur de <strong>jeux vidéo</strong>, de <strong>dessin</strong> ainsi que
+            de <strong>musique</strong>.</p>
+        </article>
+        <hr>
+
+        <article>
+            <h2>Mon parcours</h2>
+            <ul>
+                <li>2021 ~ En cours - Formation en Développement Web & Web Mobile</li>
+                <li>2019 - Stage sur un Projet d'application Nemesis App</li>
+                <li>2016 ~ 2019 - Bachelor Game Design</li>
+                <li>2013 ~ 2016 - Baccalauréat en Sciences de l'Ingénieur</li>
+            </ul>
+        </article>
+        <hr>
+
+        <article>
+            <div>
+                <h2>Mes compétences en web</h2>
+                <table border="1">
+                    <tr>
+                        <th>Technologie</th>
+                        <th>Débutant</th>
+                        <th>Moyen</th>
+                        <th>Bon</th>
+                        <th>Expert</th>
+                    </tr>
+                    <tr>
+                        <td><img src="Ressources/html.svg" alt="Logo HTML"></td>
+                        <td>&#160;</td>
+                        <td>&#160;</td>
+                        <td>X</td>
+                        <td>&#160;</td>
+                    </tr>
+                    <tr>
+                        <td><img src="Ressources/css.svg" alt="Logo CSS"></td>
+                        <td>&#160;</td>
+                        <td>X</td>
+                        <td>&#160;</td>
+                        <td>&#160;</td>
+                    </tr>
+                    <tr>
+                        <td><img src="Ressources/js.svg" alt="Logo JavaScript"></td>
+                        <td>X</td>
+                        <td>&#160;</td>
+                        <td>&#160;</td>
+                        <td>&#160;</td>
+                    </tr>
+                    <tr>
+                        <td><img src="Ressources/php.svg" alt="Logo PHP"></td>
+                        <td>X</td>
+                        <td>&#160;</td>
+                        <td>&#160;</td>
+                        <td>&#160;</td>
+                    </tr>
+                    <tr>
+                        <td><img src="Ressources/sql.svg" alt="Logo SQL"></td>
+                        <td>X</td>
+                        <td>&#160;</td>
+                        <td>&#160;</td>
+                        <td>&#160;</td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+        </article>
+        <hr>
+
+        <article>
+            <h2>Me contacter</h2>
+            <p>Mon téléphone : <a href="tel:0666425619" title="Popup pour passer un appel" rel="nofollow">06 66 42 56 19</a>
+            <br>
+            Mon mail : <a href="https://www.google.com/intl/fr/gmail/about/" title="Redirection vers Gmail" target="_blank" rel="nofollow">scotty.chouan@gmail.com</a></p>
+
+            <h3>Formulaire de contact</h3>
+            <form action="#" method="POST">
+                <div>
+                    <div>
+                        <label for="homme">Homme &male;</label>
+                        <input type="radio" id="homme" name="identite" checked>
+                    </div>
+                    <div>
+                        <label for="femme">Femme &female;</label>
+                        <input type="radio" id="femme" name="identite">
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <label for="nomprenom">Nom & Prénom :</label>
+                    <input type="text" id="nomprenom" name="name_Nomprenom" placeholder="ex : Didier Deschamps" size="23">
+                </div>
+                <br>
+                <div>
+                    <label for="age">Âge :</label>
+                    <input type="number" id="age" name="name_Age" placeholder="ex : 52">
+                    <label for="age">ans</label>
+                </div>
+                <br>
+                <div>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="name_Email" pattern=".+@.+\.com" placeholder="ex : prenom@domain.com" size="23">
+                </div>
+                <br>
+                <div>
+                    <label for="sujet">Sujet :</label>
+                    <select id="sujet" name="name_Sujet">
+                        <option value="0">Choisissez</option>
+                        <option value="1">1er sujet</option>
+                        <option value="2">2nd sujet</option>
+                        <option value="3">3ème sujet</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="message">Votre message :</label>
+                    <br>
+                    <textarea id="message" name="name_Message" placeholder="ex : Madame, Monsieur ..." rows="8" cols="43"></textarea>
+                </div>
+                <br>
+                <div>
+                    <input type="checkbox" id="checkbox" name="name_Checkbox">
+                    <label for="checkbox">En cochant cette case j'accepte les conditions relatives à l'utilisation de mes données personnelles décrites dans les 
+                    <a href="#" title="Redirection vers les mentions légales">mentions légales</a>.</label>
+                </div>
+                <br>
+                <input type="submit" value="Envoyer le message">
+            </form>
+        </article>
+    </main>
+
+    <footer>
+        <p>Site conçu par Scotty Chouan</p>
+    </footer>
+</body>
+</html>
